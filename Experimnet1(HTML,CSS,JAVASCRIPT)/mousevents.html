@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Event Handling</title>
+<style>
+    h1{text-align:center;}
+    p{padding:0.5px;}
+    h1{
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    body{
+        background-color: lightblue;
+    }
+</style>
+</head>
+<body>
+<h1><p id="header">Welcome to tutorials of event handling </p></h1>
+    <ul>
+        <li>OnclickEvent: <button onclick="document.getElementById('p169').innerHTML = Date()">Time is ?</button></li>
+        <p id="p169"></p>
+        <li>ONSUBMIT EVENT:
+          <a href="register.html">Click here</a> 
+        </li>
+        <li>ONMOUSEOVER EVENT AND ON MOUSEOUT EVENT:
+            <br>
+            <img id="img1"  onmouseover="f1()"  onmouseout= "f2()" src="anits1.jpg" height="100" width="100">
+            <br>
+            <br>
+        </li>
+        <li>
+            <p>ON KEY PRESS EVENT:</p>
+            <label for="type input">Enter your name:</label>
+            <input type="text" name="nm" onkeypress="f3()">
+        </li>
+       <!---<li>
+            <p>ON MOUSEOVER EVENT WITH PARAGRAPH</p>
+            <button onmouseover="f4()">here is an example of MOUSEOVER</button>
+        </li>  -->     
+    </ul>
+    <script>
+        function f1(x){
+            document.getElementById("img1").src="anits1.jpg";
+        }
+        function f2(x){
+            document.getElementById("img1").src="anits3.jpg";
+        }
+        function f3(){
+            alert("You pressed a key inside the input field");
+        }
+        function f4(){
+            document.getElementById("header").style.color = "red";
+        }
+    </script>
+</body>
+</html>
